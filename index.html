@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mars 2.0</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+      font-family: 'IBM Plex Mono', monospace;
+      color: white;
+    }
+
+    @font-face {
+      font-family: 'RoughTypewriter';
+      src: url('fonts/rough_typewriter_X_bold.otf') format('opentype');
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
+
+    .overlay h1 {
+      font-family: 'RoughTypewriter', monospace;
+      font-size: 6vw;
+      margin: 0 0 2vh 0;
+      padding: 1vw 3vw;
+      background: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      text-transform: lowercase;
+    }
+
+    .overlay p {
+      font-size: 3.5vw;
+      margin: 0;
+      padding: 0.7vw 2vw;
+      background: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="Mars Website.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h1>mars</h1>
+    <p>please stand by for 2.0</p>
+  </div>
+</body>
+</html>
